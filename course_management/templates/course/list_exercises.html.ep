@@ -1,0 +1,27 @@
+% layout 'default';
+% title $course->{name};
+
+<% use Data::Dumper; %>
+<pre>
+  <%= Dumper $course %>
+</pre>
+
+<p>
+  <ul>
+    <% for my $exercise_ref (@{$course->{exercises}}) { %>
+      <li>
+        <a href="<%= $exercise_ref->{url} %>"><%= $exercise_ref->{title} %></a>
+      </li>
+    <% } %>
+  </ul>
+</p>
+
+<form method="POST" action="/upload" enctype="multipart/form-data">
+  <input type="hidden" name="id" value="<%= $course->{id} %>">
+  <input type="file" name="upload">
+  <input type="submit" value="Upload">
+</form>
+
+<% if ($msg_upload ne '') { %>
+  <p><%= $msg_upload %></p>
+<% } %>

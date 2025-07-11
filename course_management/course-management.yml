@@ -1,0 +1,4 @@
+---
+secrets:
+  - 3f47474cdb64cf35c0d1773421356d00f2f5a719
+course_config: courses/config.yml

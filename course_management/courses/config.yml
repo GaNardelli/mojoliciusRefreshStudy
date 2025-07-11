@@ -1,0 +1,24 @@
+- name: Programming Bootcamp 2025.07
+  id: bootcamp-2025-07
+  students:
+    - name: Foo
+      email: foo@email.com
+    - name: Bar
+      email: bar@email.com
+  exercises: 
+    - title: Hello World 
+      url: https://slides.code-maven.com/perl/exercise-hello-world.html
+    - title: Color Selector files 
+      url: https://slides.code-maven.com/perl/exercise-color-selector-files.html
+    - title: Sort Numbers 
+      url: https://slides.code-maven.com/perl/exercise-sort-numbers.html
+- name: Advanced  2025.10
+  id: advanced-2025-10
+  students:
+    - name: Foo
+      email: foo@email.com
+    - name: Advanced Bar
+      email: advancedbar@email.com
+  exercises: 
+    - title: Blogs Perl
+      url: https://slides.code-maven.com/perl/exercise-blogs-perl.html
